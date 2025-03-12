@@ -26,12 +26,10 @@ int main() {
 
         for (int i = 0; i < row.size(); i++) {
             for (int j = 0; j < row.size(); j++) {
-                if (i != j) {
-                    if (row[i] % row[j] == 0) {
-                        ans += row[i] / row[j];
-                        found = true;
-                        break;
-                    }
+                if (i != j && row[i] % row[j] == 0) {
+                    ans += row[i] / row[j];
+                    found = true;
+                    break;
                 }
             }
             if (found) break;
