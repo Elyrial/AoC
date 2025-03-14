@@ -30,7 +30,7 @@ int calculateSum(const std::string & memory) {
             isMulEnabled = false;
             it += match.length();
         } else {
-            ++it;
+            it++;
         }
     }
     return total;

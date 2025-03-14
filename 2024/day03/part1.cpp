@@ -7,7 +7,6 @@ int calculateSum(const std::string &memory) {
     std::regex dontPattern(R"(don't\(\))");
 
     std::smatch match;
-    std::vector < int > result;
 
     int total = 0;
     auto it = memory.cbegin();
